@@ -1,0 +1,23 @@
+term: change to number of years
+grade: change to 1-5
+sub_grade: combine with grade as 
+emp_title
+emp_length
+home_ownership
+verification_status
+issue_d
+loan_status
+pymnt_plan
+url
+desc
+purpose
+title
+zip_code
+addr_state
+earliest_cr_line
+initial_list_status
+last_pymnt_d
+next_pymnt_d
+last_credit_pull_d
+application_type
+verification_status_joint
