@@ -1,24 +1,37 @@
 Notes on the categorical columns
-term: change to number of years
-grade: change to 1-5
-sub_grade: combine with grade as decimal
-emp_title: Delete
-emp_length: convert to number of years
+
+Convert to numerical
+term: change to number of years ✅
+grade: change to 0-6 ✅
+sub_grade: combine with grade as decimal ✅
+emp_length: convert to number of years ✅
+
+One-hot encoding
 home_ownership: one-hot 'RENT' 'OWN' 'MORTGAGE'
 verification_status: one-hot
-issue_d: turn into datetime
-loan_status:target variable, leave for later
-pymnt_plan: y--> 1, n --> 0
-url: Delete. provides no information outside of id
-desc: Delete. don't have time to use llm to analyze
 purpose: one hot encoding
-title: Delete. values are to ambiguous
-zip_code: Delete
-addr_state: Delete
+
+Date time
+issue_d: turn into datetime
 earliest_cr_line: Date time
-initial_list_status: Binary variable
-last_pymnt_d: Date
+last_pymnt_d: Date time figure 
 next_pymnt_d: Date time
 last_credit_pull_d: Datetime
+
+Binary Encoding
+pymnt_plan: Binary variable y--> 1, n --> 0
+initial_list_status: Binary variable
 application_type: Binary
 verification_status_joint: 
+
+Delete Column
+emp_title: Delete ❌
+url: Delete. provides no information outside of id ❌
+desc: Delete. don't have time to use llm to analyze ❌
+title: Delete. values are to ambiguous❌
+zip_code: Delete ❌
+addr_state: Delete ❌
+
+
+Target Variable
+loan_status:target variable, leave for later
