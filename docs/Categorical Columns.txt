@@ -7,30 +7,35 @@ sub_grade: combine with grade as decimal ✅
 emp_length: convert to number of years ✅
 
 One-hot encoding
-home_ownership: one-hot 'RENT' 'OWN' 'MORTGAGE'
-verification_status: one-hot
-purpose: one hot encoding
+home_ownership: one-hot 'RENT' 'OWN' 'MORTGAGE' 'OTHER' ✅
+verification_status: one-hot ✅
+purpose: one hot encoding ✅
+verification_status_joint:✅
 
-Date time
-issue_d: turn into datetime
-earliest_cr_line: Date time
-last_pymnt_d: Date time figure 
-next_pymnt_d: Date time
-last_credit_pull_d: Datetime
+
 
 Binary Encoding
-pymnt_plan: Binary variable y--> 1, n --> 0
-initial_list_status: Binary variable
-application_type: Binary
-verification_status_joint: 
+pymnt_plan: Binary variable y--> 1, n --> 0✅
+initial_list_status: Binary variable✅
+application_type: Binary✅
+
+
+
+Date time
+issue_d: ⏲️ turn into datetime✅
+earliest_cr_line:⏲️ Date time✅
+last_pymnt_d:⏲️ Date time figure ✅
+next_pymnt_d:⏲️ Date time✅
+last_credit_pull_d: ⏲️Datetime✅
+
 
 Delete Column
-emp_title: Delete ❌
-url: Delete. provides no information outside of id ❌
-desc: Delete. don't have time to use llm to analyze ❌
-title: Delete. values are to ambiguous❌
-zip_code: Delete ❌
-addr_state: Delete ❌
+emp_title: Delete ✅
+url: ❌Delete. provides no information outside of id ✅
+desc: ❌Delete. don't have time to use llm to analyze ✅
+title: ❌Delete. values are to ambiguous✅
+zip_code: ❌Delete ✅
+addr_state: ❌Delete ✅
 
 
 Target Variable
