@@ -3,8 +3,8 @@ Missing Values
 'annual_inc': fillna(0)
 'delinq_2yrs': fillna(0)
 'inq_last_6mths': fillna(0)
-'mths_since_last_delinq',
-'mths_since_last_record',
+'mths_since_last_delinq': fillna(0)
+'mths_since_last_record': fillna(0)
 'open_acc',
 'pub_rec',
 'revol_util',
