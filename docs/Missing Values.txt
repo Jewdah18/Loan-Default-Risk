@@ -3,31 +3,32 @@ Missing Values
 'annual_inc': fillna(0)
 'delinq_2yrs': fillna(0)
 'inq_last_6mths': fillna(0)
-'mths_since_last_delinq': fillna(0)
-'mths_since_last_record': fillna(0)
-'open_acc',
-'pub_rec',
-'revol_util',
-'total_acc',
-'collections_12_mths_ex_med',
-'mths_since_last_major_derog',
-'annual_inc_joint',
-'dti_joint',
-'acc_now_delinq',
-'tot_coll_amt',
-'tot_cur_bal',
-'open_acc_6m',
-'open_il_6m',
-'open_il_12m',
-'open_il_24m',
-'mths_since_rcnt_il',
-'total_bal_il',
-'il_util',
-'open_rv_12m',
-'open_rv_24m',
-'max_bal_bc',
-'all_util',
-'total_rev_hi_lim',
-'inq_fi',
-'total_cu_tl',
-'inq_last_12m']
+'earliest_cr_line': fillna(0)
+'mths_since_last_delinq': fillna(1000)
+'mths_since_last_record': fillna(1000)
+'open_acc': fillna(0)
+'pub_rec': fillna(0)
+'revol_util': fillna(0)
+'total_acc':fillna(0)
+'collections_12_mths_ex_med': fillna(0)
+'mths_since_last_major_derog',fillna(1000)
+'annual_inc_joint': combine with 'annual_inc' and create a binary column for joint or not
+'dti_joint': fillna(mean)
+'acc_now_delinq':fillna(0)
+'tot_coll_amt':fillna(0)
+'tot_cur_bal': fillna(0)
+'open_acc_6m': fillna(0)
+'open_il_6m': fillna(0)
+'open_il_12m': fillna(0)
+'open_il_24m': fillna(0)
+'mths_since_rcnt_il': fillna(1000)
+'total_bal_il': fillna(0)
+'il_util':fillna(0)
+'open_rv_12m': fillna(0)
+'open_rv_24m': fillna(0)
+'max_bal_bc': fillna(0)
+'all_util': fillna(0)
+'total_rev_hi_lim': fillna(0)
+'inq_fi': fillna(0)
+'total_cu_tl': fillna(0)
+'inq_last_12m': fillna(0)
