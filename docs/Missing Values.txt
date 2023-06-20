@@ -3,7 +3,7 @@ Missing Values
 'annual_inc': fillna(0)
 'delinq_2yrs': fillna(0)
 'inq_last_6mths': fillna(0)
-'earliest_cr_line': fillna(0)
+'earliest_cr_line': fillna(mean)
 'mths_since_last_delinq': fillna(1000)
 'mths_since_last_record': fillna(1000)
 'open_acc': fillna(0)
